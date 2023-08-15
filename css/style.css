@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+:root{
+    scroll-behavior:auto;
+}
+ul {
+  list-style: none;
+}
+
+/* home */
+
+#home {
+    width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(214, 46, 51, 0.6),
+      rgba(214, 46, 51, 0.6)
+    ),
+    url(../imges/events-heavenly-header.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+#home .text{
+padding-top: 200px;
+}
+h1 {
+   
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.open{
+    transition: all 0.5s;
+    padding: 10px;
+}
+.sidebar {
+  width: 0px;
+  position: fixed;
+  height: 100%;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  z-index: 999999;
+  transition: 0.5s;
+  display: flex;
+  align-items: flex-start;
+  align-items: center;
+
+
+}
+.innerbox {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+.innerbox ul li {
+  padding: 30px 8px 15px 0px;
+  font-size: 25px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.innerbox ul li a {
+  text-decoration: none;
+  color: white;
+}
+.innerbox ul li a:hover {
+  color: brown;
+}
+.innerbox i {
+  display: flex;
+  justify-content: end;
+  padding: 20px;
+  font-size: 25px;
+}
+.innerbox i:hover {
+  color: brown;
+}
+.setting {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+.setting i {
+  font-size: 25px;
+}
+
+/*/////////////////////////// details///////////////////////////// */
+
+#Details {
+  background-color: #ffffff;
+}
+.boxHeader {
+  background-color: rgba(214, 46, 51, 0.6);
+  padding: 10px;
+  cursor: pointer;
+}
+.boxBody {
+  background-color: rgb(218, 209, 209);
+  text-align: center;
+  padding: 5px;
+}
+.outerBox {
+  width: 60%;
+}
+#Details .boxBody{
+display: none;
+}
+@media (max-width:767px) {
+  .boxHeader{
+    font-size: 25px;
+  }  
+    
+}
+
+/* //////////////////duration////////// */
+.counter {
+  background-image: linear-gradient(
+      rgba(214, 46, 51, 0.6),
+      rgba(214, 46, 51, 0.6)
+    ),
+    url(../imges/invitation-2508607__340.jpg);
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+}
+.counter .box {
+  border: 2px white solid;
+  height: 150px;
+}
+@media(max-width:767px){
+.counter{
+    background-image: none;
+background-color: rgba(214, 92, 96, 0.6) ;
+}
+.counter .box{
+    text-align: center;
+   max-width: 75%;
+   margin: auto;
+}
+}
+/* //////////////////////////////////////////////////////////////// */
+/* contact */
+#Contact {
+  margin-top: 100px;
+}
+
+#Contact .head h2 {
+  text-transform: uppercase;
+  font-size: 35px;
+  color: #444;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#Contact .head p {
+  color: #777;
+  font-weight: 300;
+  font-size: 16px;
+}
+#Contact .con-info h3 {
+  color: #444;
+  font-size: 18px;
+  font-weight: bold;
+}
+#Contact .con-info p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #777;
+}
+
+#Contact .icons {
+  margin-top: 50px;
+}
+#Contact .icons p {
+  margin-bottom: 35px;
+}
+#Contact i {
+  margin-right: 20px;
+  color: #777;
+}
+#Contact .red {
+  color: #d62e33 !important;
+}
+
+#Contact .con-info .social-list {
+  margin-top: 60px;
+  color: #777;
+}
+
+#Contact .con-info .social-list i {
+  margin-right: 10px;
+  border: 1px solid #999;
+  width: 40px;
+  height: 40px;
+  line-height: 42px;
+  cursor: pointer;
+  text-align: center;
+}
+#Contact .con-info .social-list i:hover {
+  color: #fff;
+  background-color: #d62e33;
+  border: 1px solid #d62e33;
+}
+#Contact form input,
+#Contact form textarea {
+  margin-bottom: 20px;
+  border-radius: 0;
+}
+#Contact form textarea {
+  height: 200px;
+  resize: vertical;
+}
+
+#Contact form button {
+  background-color: #d62e33;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 0;
+  text-transform: uppercase;
+}
+
+#chars {
+  font-size: 20px;
+  color: #d62e33;
+}
